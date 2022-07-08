@@ -75,7 +75,7 @@ header {
     align-items: center;
 }
 
-.sidebar .profile_info .profile_image {
+ .profile_info .profile_image {
     width: 100px;
     height: 100px;
     border-radius: 100px;
@@ -104,6 +104,11 @@ header {
     background: #19B3D3;
     color : white;
     text-decoration: none;
+}
+
+.sidebar .active {
+    background: #21222b;
+
 }
 
 .sidebar i {
