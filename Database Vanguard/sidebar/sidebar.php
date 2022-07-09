@@ -23,7 +23,9 @@
     <a href="#"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
     <a href="index_learner.php" class="<?php if($table_name=='Learner'){echo 'active';}?>"><i class="fa fa-book-open-reader"></i></i><span>Learners</span></a>
     <a href="index_professor.php" class="<?php if($table_name=='Professor'){echo 'active';}?>"><i class="fa fa-user-tie"></i></i><span>Professors</span></a>
-    <a href="index_course.php"  class="<?php if($table_name=='Course'){echo 'active';}?>"><i class="fa fa-table"></i><span>Courses</span></a>
+    <a href="index_course.php"  class="<?php if($table_name=='Course'){echo 'active';}?>"><i class="fa fa-lightbulb"></i><span>Courses</span></a>
+    <a href="index_enrollment.php"  class="<?php if($table_name=='Enrollment'){echo 'active';}?>"><i class="fa fa-address-book"></i><span>Enrollment</span></a>
+    <a href="index_cpdetails.php"  class="<?php if($table_name=='Course Professor Details'){echo 'active';}?>"><i class="fa fa-table"></i><span>CP Details</span></a>
 
 </div>
 <!--sidebar end-->

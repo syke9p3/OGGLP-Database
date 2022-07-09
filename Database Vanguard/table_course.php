@@ -154,9 +154,7 @@
 				<button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-hidden="true" style="position: relative; right:2%">&times;</button>
 			</div>
 
-
 			<?php include "edit_course.php" ?>
-
 
 			<div class="modal-footer">
 				<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
