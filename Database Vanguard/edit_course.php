@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4 d-flex justify-content-center">
                 <div class="profile-info d-flex justify-content-center">
-                    <img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" id="dp" class="profile-img" alt="" />
+                    <img src="https://wordpressnostress.co.uk/wp-content/uploads/2014/09/training-course-icon-blue.png" id="dp" class="profile-img" alt="" />
                 </div>
             </div>
             <div class="col-md-6">
@@ -13,7 +13,7 @@
                         <input type="text" class="form-control edit" name="name" placeholder="<?php echo $table_name ?> Name" required>
                         <label for="name" class="form-label">Name</label>
                     </div>
-                    <h6>Professor</h6>
+                    <h6>Course</h6>
                     <p class="proile-rating"><span>Vanguard University</span></p>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -38,10 +38,10 @@
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="row">
                             <div class="col-md-6">
-                                <label>Professor Id</label>
+                                <label>Course Code</label>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control edit" name="id" placeholder="<?php echo $table_name ?> ID" required>
+                                <input type="text" class="form-control edit" name="id" placeholder="<?php echo $table_name ?> Code" required>
 
                             </div>
                         </div>
@@ -52,7 +52,7 @@
 
                 <div class="modal-footer">
                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                    <input type="submit" name="edit_professor" class="btn btn-info" value="Save">
+                    <input type="submit" name="edit_course" class="btn btn-info" value="Save">
                 </div>
             </div>
         </div>

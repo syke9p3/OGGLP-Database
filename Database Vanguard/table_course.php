@@ -97,6 +97,22 @@
 		</div>
 
 	</div>
+	<!-- View Modal HTML -->
+	<div id="viewModal" class="modal fade">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content modal-fullscreen">
+
+				<div class="modal-header">
+					<h4 class="modal-title">View <?php echo $table_name ?></h4>
+					<button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-hidden="true" style="position: relative; right:2%">&times;</button>
+				</div>
+
+
+				<?php include "view_course.php" ?>
+
+			</div>
+		</div>
+	</div>
 	<!-- Add Modal HTML -->
 	<div id="addModal" class="modal fade">
 		<div class="modal-dialog">
@@ -130,37 +146,26 @@
 	</div>
 	<!-- Edit Modal HTML -->
 	<div id="editModal" class="modal fade">
-		<div class="modal-dialog">
-			<div class="modal-content">
-			<form class="form" action="editRecord.php" method="POST">
-
-					<div class="modal-header">						
-						<h4 class="modal-title">Edit <?php echo $table_name?></h4>
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-
-					<div class="modal-body">
-						<div class="form-group">
-							<label for="id" class="form-label">ID</label>
-							<input type="text" class="form-control edit" min=0 name="id" placeholder="<?php echo $table_name?> ID" readonly>
-						</div>
-
-						<div class="form-group">
-							<label for="name" class="form-label">Name</label>
-							<input type="text" class="form-control edit" name="name" placeholder="<?php echo $table_name?> Name" required>
-						</div>
-              
-									
-					</div>
-
-					<div class="modal-footer">
-						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<input type="submit" name="edit_course" class="btn btn-info" value="Save">
-					</div>
-				</form>
+	<div class="modal-dialog modal-fullscreen">
+		<div class="modal-content modal-fullscreen">
+		<form class="form" action="editRecord.php" method="POST">					
+			<div class="modal-header">
+				<h4 class="modal-title">Edit <?php echo $table_name ?></h4>
+				<button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-hidden="true" style="position: relative; right:2%">&times;</button>
 			</div>
+
+
+			<?php include "edit_course.php" ?>
+
+
+			<div class="modal-footer">
+				<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+				<input type="submit" name="edit_course" class="btn btn-success" value="Add">
+			</div>
+		</form>					
 		</div>
 	</div>
+</div>
 	<!-- Delete Modal HTML -->
 	<div id="deleteModal" class="modal fade">
 		<div class="modal-dialog">
@@ -196,6 +201,28 @@
 
 			// Activate tooltip
 			$('[data-toggle="tooltip"]').tooltip();
+
+			$('.viewModalBtn').on('click', function(e) {
+				$('#view-modal').modal('show');
+				e.preventDefault();
+
+				$tr = this.closest('tr');
+
+				$id_val = $tr.getElementsByTagName('td')[0].innerHTML;
+				$name_val = $tr.getElementsByTagName('td')[1].innerHTML;
+
+				$(".course-name").append($name_val);
+				$(".course-id").append($id_val);
+
+
+
+		});
+
+		$('#closeBtn').on('click', function(e) {
+			$(".course-name").empty();
+			$(".course-id").empty();
+
+		})
 
 			$('.editModalBtn').on('click', function(e) {
                     $('#edit-modal').modal('show');

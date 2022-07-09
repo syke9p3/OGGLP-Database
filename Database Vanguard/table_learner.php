@@ -143,13 +143,54 @@
 
 					<div class="form-group">
 						<label for="id" class="form-label">ID</label>
-						<input type="text" class="form-control" min=0 name="id" placeholder="<?php echo $table_name ?> ID" required>
+						<input type="text" class="form-control"  name="id" placeholder="ID" required>
 					</div>
 
 					<div class="form-group">
 						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-control" name="name" placeholder="<?php echo $table_name ?> Name" required>
+						<input type="text" class="form-control" name="name" placeholder=" Name" required>
 					</div>
+
+					<div class="form-group">
+						<label for="id" class="form-label">Gender</label>
+						<input type="text" class="form-control" name="gender" placeholder=" Gender" required>
+					</div>
+
+					<div class="form-group">
+						<label for="name" class="form-label">Birthday</label>
+						<input type="text" class="form-control" name="bday" placeholder=" Birthday" required>
+					</div>
+
+					<div class="form-group">
+						<label for="id" class="form-label">Address</label>
+						<textarea type="text" class="form-control" name="address" placeholder=" Address" ></textarea>
+					</div>
+
+					<div class="form-group">
+						<label for="name" class="form-label">Home Phone Number</label>
+						<input type="text" class="form-control" name="homeNum" placeholder=" Home Phone Number" >
+					</div>
+
+					<div class="form-group">
+						<label for="id" class="form-label">Cellphone Number</label>
+						<input type="text" class="form-control" name="cellNum" placeholder=" Cellphone Number">
+					</div>
+
+					<div class="form-group">
+						<label for="id" class="form-label">Other Phone Number</label>
+						<input type="text" class="form-control" name="otherNum" placeholder=" Other Phone Number" >
+					</div>
+
+					<div class="form-group">
+						<label for="name" class="form-label">Email</label>
+						<input type="text" class="form-control" name="email" placeholder=" Email" >
+					</div>
+
+					<div class="form-group">
+						<label for="id" class="form-label">Alternative Email</label>
+						<input type="text" class="form-control" name="altEmail" placeholder=" Alternative Email" >
+					</div>
+					
 				</div>
 
 				<div class="modal-footer">

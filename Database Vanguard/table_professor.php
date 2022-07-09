@@ -164,7 +164,7 @@
 				<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
 				<input type="submit" name="add_professor" class="btn btn-success" value="Add">
 			</div>
-						</form>					
+		</form>					
 		</div>
 	</div>
 </div>

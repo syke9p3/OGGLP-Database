@@ -53,13 +53,13 @@
         $id = $_POST['id'];
         $name = $_POST['name'];
         $gender= $_POST['gender']; 
-        $bday= $_POST['bday']; 
-        $address= $_POST['address']; 
-        $homeNum= $_POST['homeNum']; 
-        $cellNum= $_POST['cellNum']; 
-        $otherNum= $_POST['otherNum']; 
-        $email= $_POST['email']; 
-        $altEmail= $_POST['altEmail'];
+        $bday = $_POST['bday']; 
+        $address = $_POST['address']; 
+        $homeNum = $_POST['homeNum']; 
+        $cellNum = $_POST['cellNum']; 
+        $otherNum = $_POST['otherNum']; 
+        $email = $_POST['email']; 
+        $altEmail = $_POST['altEmail'];
 
         $sql = "UPDATE learner SET `learner_name` = '$name',
             `gender` = '$gender',
@@ -67,12 +67,11 @@
             `address` = '$address',
             `home_phone_number` = '$homeNum',
             `cellphone_number` = '$cellNum',
-            -- 'other_phone_number` = '$otherNum',
+            `other_phone_number` = '$otherNum',
             `email_address` = '$email',
             `alternative_email` = '$altEmail'
             WHERE `l_learner_id` = '$id'";
 
-                                
         $sql_run = mysqli_query($conn, $sql);
 
         if($sql_run)
@@ -88,7 +87,7 @@
             //  $address ."--- ".
             //  $homeNum ." --- ".
             //  $cellNum ." --- ".
-            //  $otherNum ." --- ".
+            //  $otherNum." --- ".
             //  $email ." --- ".
             //  $altEmail ." --- ".
             
