@@ -2,7 +2,7 @@
 
 <div class="content">
 	<div class="container-xl">
-		<div class="table-responsive">
+		<div class="table-x">
 			<div class="table-wrapper">
 				<div class="table-title">
 					<div class="row">
@@ -76,7 +76,7 @@
 										</span>
 									</td> -->
 										<td><?php echo $row["l_learner_id"]; ?></td> <!-- 0 -->
-										<td><?php echo $row["learner_name"]; ?></td> <!-- 1 -->
+										<td style="font-weight: bold"><?php echo $row["learner_name"]; ?></td> <!-- 1 -->
 										<td><?php echo $row["gender"]; ?></td> <!-- 3 -->
 										<td><?php echo $row["birthdate"]; ?></td> <!-- 4 -->
 										<td class="d-none"><?php echo $row["address"]; ?></td> <!-- 5 -->
@@ -131,76 +131,23 @@
 </div>
 <!-- Add Modal HTML -->
 <div id="addModal" class="modal fade">
-	<div class="modal-dialog">
-		<div class="modal-content">
+	<div class="modal-dialog modal-fullscreen">
+		<div class="modal-content modal-fullscreen">
 			<form class="form" action="createRecord.php" method="POST">
+
 				<div class="modal-header">
 					<h4 class="modal-title">Add <?php echo $table_name ?></h4>
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-hidden="true" style="position: relative; right:2%">&times;</button>
 				</div>
 
-				<div class="modal-body">
+				<?php include 'add_learner.php' ?>
 
-					<div class="form-group">
-						<label for="id" class="form-label">ID</label>
-						<input type="text" class="form-control"  name="id" placeholder="ID" required>
-					</div>
 
-					<div class="form-group">
-						<label for="name" class="form-label">Name</label>
-						<input type="text" class="form-control" name="name" placeholder=" Name" required>
-					</div>
-
-					<div class="form-group">
-						<label for="id" class="form-label">Gender</label>
-						<input type="text" class="form-control" name="gender" placeholder=" Gender" required>
-					</div>
-
-					<div class="form-group">
-						<label for="name" class="form-label">Birthday</label>
-						<input type="text" class="form-control" name="bday" placeholder=" Birthday" required>
-					</div>
-
-					<div class="form-group">
-						<label for="id" class="form-label">Address</label>
-						<textarea type="text" class="form-control" name="address" placeholder=" Address" ></textarea>
-					</div>
-
-					<div class="form-group">
-						<label for="name" class="form-label">Home Phone Number</label>
-						<input type="text" class="form-control" name="homeNum" placeholder=" Home Phone Number" >
-					</div>
-
-					<div class="form-group">
-						<label for="id" class="form-label">Cellphone Number</label>
-						<input type="text" class="form-control" name="cellNum" placeholder=" Cellphone Number">
-					</div>
-
-					<div class="form-group">
-						<label for="id" class="form-label">Other Phone Number</label>
-						<input type="text" class="form-control" name="otherNum" placeholder=" Other Phone Number" >
-					</div>
-
-					<div class="form-group">
-						<label for="name" class="form-label">Email</label>
-						<input type="text" class="form-control" name="email" placeholder=" Email" >
-					</div>
-
-					<div class="form-group">
-						<label for="id" class="form-label">Alternative Email</label>
-						<input type="text" class="form-control" name="altEmail" placeholder=" Alternative Email" >
-					</div>
-					
-				</div>
-
-				<div class="modal-footer">
-					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" name="add_learner" class="btn btn-success" value="Add">
-				</div>
 			</form>
 		</div>
 	</div>
 </div>
+
 <!-- Edit Modal HTML -->
 <div id="editModal" class="modal fade">
 	<div class="modal-dialog modal-fullscreen">
@@ -213,7 +160,6 @@
 				</div>
 
 				<?php include 'edit_learner.php' ?>
-
 
 			</form>
 		</div>

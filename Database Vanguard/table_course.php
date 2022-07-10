@@ -2,7 +2,7 @@
 
     <div class="content">
 		<div class="container-xl">
-			<div class="table-responsive">
+			<div class="table-x">
 				<div class="table-wrapper">
 					<div class="table-title">
 						<div class="row">
@@ -67,7 +67,7 @@
 										</span>
 									</td> -->
 									<td><?php echo $row["c_course_code"]; ?></td>
-									<td><?php echo $row["course_name"]; ?></td>
+									<td style="font-weight: bold"><?php echo $row["course_name"]; ?></td>
 									
 									<td>
 										<a href="#viewModal" class="view viewModalBtn" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="View">&#xE8F4;</i></a>
@@ -84,7 +84,9 @@
 							</tbody>
 						</table>
 					</div>
+					
 					<div class="clearfix">
+					<!-- <hr> -->
 						<div id="hint-text" class="hint-text">
 							<!-- dataTable_info in JQuery -->
 						</div>
@@ -155,11 +157,7 @@
 			</div>
 
 			<?php include "edit_course.php" ?>
-
-			<div class="modal-footer">
-				<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-				<input type="submit" name="edit_course" class="btn btn-success" value="Add">
-			</div>
+			
 		</form>					
 		</div>
 	</div>

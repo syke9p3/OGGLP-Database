@@ -5,7 +5,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 13px;
 }
-.table-responsive {
+.table-res {
     margin: 30px 0;
 }
 .table-wrapper {
@@ -18,7 +18,9 @@ body {
 
 .table-main-wrapper {
 	overflow-y: auto;
-	height: 350px;
+	height: 450px;
+	margin-bottom: 0;
+
 }
 
 .table-title {        
@@ -151,7 +153,10 @@ table.table .avatar {
 /* Pagination */
 
 .clearfix {
-	padding-top: 1rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0;
+	margin-bottom: 0;
+
 }
 
 .pagination {
@@ -177,7 +182,8 @@ table.table .avatar {
 	line-height: 30px;
 	border-radius: 2px !important;
 	text-align: center;
-	padding: 10px;
+	padding: 6px 10px;
+	
 	text-decoration: none;
 }
 
@@ -192,6 +198,7 @@ table.table .avatar {
 .paginate_button.current, .pagination li.active a, .pagination li.active a.page-link {
 	color: white;
 	background: #03A9F4;
+	height: 2rem;
 }
 .paginate_button.current:hover,.pagination li.active a:hover {        
 	background: #0397d6;
@@ -302,4 +309,16 @@ table.table .avatar {
 }	
 .modal form label {
 	font-weight: normal;
-}	
+}
+
+#cost::before {
+	content: "₱";
+}
+
+#hours::after{
+	content: " hours";
+}
+
+#months::after{
+	content: " months";
+}

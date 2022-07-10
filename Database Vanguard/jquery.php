@@ -16,7 +16,7 @@
 				},
 
 				"language": {
-					"search": "Find: ",
+					"search": "<i class='fa fa-search'></i>&nbsp;&nbsp;",
 				}
 			});
     

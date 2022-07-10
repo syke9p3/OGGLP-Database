@@ -7,7 +7,7 @@ session_start();
 <?php include 'header.php'; ?>
 
 <body>
-	<?php $table_name = 'Course Professor Details' ?>
+	<?php $table_name = 'Course Professor Detail' ?>
 
 	<?php require 'conn.php'; ?>
 	<?php include 'sidebar\sidebar.php'; ?>

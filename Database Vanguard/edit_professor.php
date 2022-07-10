@@ -41,7 +41,7 @@
                                 <label>Professor Id</label>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control edit" name="id" placeholder="<?php echo $table_name ?> ID" required>
+                                <input type="text" class="form-control edit" name="id" placeholder="<?php echo $table_name ?> ID" readonly required>
 
                             </div>
                         </div>

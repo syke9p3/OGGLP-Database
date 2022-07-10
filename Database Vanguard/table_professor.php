@@ -2,7 +2,7 @@
 
 <div class="content">
 	<div class="container-xl">
-		<div class="table-responsive">
+		<div class="table-x">
 			<div class="table-wrapper">
 				<div class="table-title">
 					<div class="row">
@@ -68,7 +68,7 @@
 										</span>
 									</td> -->
 										<td><?php echo $row["p_professor_id"]; ?></td>
-										<td><?php echo $row["professor_name"]; ?></td>
+										<td style="font-weight: bold"><?php echo $row["professor_name"]; ?></td>
 
 										<td>
 											<a href="#viewModal" class="view viewModalBtn" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="View">&#xE8F4;</i></a>
@@ -86,7 +86,9 @@
 						</tbody>
 					</table>
 				</div>
+				
 				<div class="clearfix">
+				<!-- <hr> -->
 					<div id="hint-text" class="hint-text">
 						<!-- dataTable_info in JQuery -->
 					</div>
@@ -156,14 +158,8 @@
 				<button id="closeBtn" type="button" class="close" data-dismiss="modal" aria-hidden="true" style="position: relative; right:2%">&times;</button>
 			</div>
 
-
 			<?php include "edit_professor.php" ?>
-
-
-			<div class="modal-footer">
-				<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-				<input type="submit" name="add_professor" class="btn btn-success" value="Add">
-			</div>
+			
 		</form>					
 		</div>
 	</div>

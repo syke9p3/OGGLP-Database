@@ -9,7 +9,7 @@
             <div class="col-md-6">
                 <div class="profile-head">
                     <div class="form-group">
-                        <input type="text" class="form-control edit" name="name" placeholder="<?php echo $table_name ?> Name" required>
+                        <input type="text" class="form-control " name="name" placeholder="<?php echo $table_name ?> Name" required>
                         <label for="name" class="form-label">Name</label>
                     </div>
                     <h6>Learner</h6>
@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-8 ">
                 <div class="tab-content profile-tab" id="myTabContent">
-                    
+
                     <div class="tab-pane fade show active  m-2" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="container mb-10">
                             <div class="row">
@@ -41,7 +41,7 @@
                                     <label>Learner Id</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control edit" name="id" placeholder="<?php echo $table_name ?> ID" readonly>
+                                    <input type="text" class="form-control " name="id" placeholder="Learner ID" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -54,6 +54,7 @@
                                             <div class="input-group-text" style="height: 38px; width:40px"><i class="fa fa-user"></i></div>
                                         </div>
                                         <select class="form-select form-control" name="gender" placeholder="</?php echo $table_name ?> Gender" required>
+                                            <option selected disabled>Select Gender</option>
                                             <option value="Male">Male</option>
                                             <option value="Female">Female</option>
                                         </select>
@@ -65,7 +66,7 @@
                                     <label>Birthday</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="date" class="form-control edit" name="bday" placeholder="<?php echo $table_name ?> Birthday" required>
+                                    <input type="date" class="form-control " name="bday" placeholder="<?php echo $table_name ?> Birthday" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -73,7 +74,7 @@
                                     <label>Address</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <textarea type="text" class="form-control edit" name="address" placeholder="<?php echo $table_name ?> Address" required></textarea>
+                                    <textarea type="text" class="form-control " name="address" placeholder="<?php echo $table_name ?> Address" required></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -83,9 +84,9 @@
                                 <div class="col-md-6">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                        <div class="input-group-text" style="height: 38px; width:40px"><i class="fa fa-envelope" style="font-size:1rem"></i></div>
+                                            <div class="input-group-text" style="height: 38px; width:40px"><i class="fa fa-envelope" style="font-size:1rem"></i></div>
                                         </div>
-                                        <input type="email" class="form-control edit" name="email">
+                                        <input type="email" class="form-control " name="email">
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +99,7 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text" style="height: 38px; width:40px"><i class="fa fa-envelope" style="font-size:1rem"></i></div>
                                         </div>
-                                        <input type="email" class="form-control edit" name="altEmail">
+                                        <input type="email" class="form-control " name="altEmail">
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +112,7 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text" style="height: 38px; width:40px"><i class="fa fa-phone" style="font-size:1rem"></i></div>
                                         </div>
-                                        <input type="text" class="form-control edit" name="homeNum">
+                                        <input type="text" class="form-control " name="homeNum">
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +125,7 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text" style="height: 38px; width:40px"><i class="fa fa-phone" style="font-size:1rem"></i></div>
                                         </div>
-                                        <input type="text" class="form-control edit" name="cellNum">
+                                        <input type="text" class="form-control " name="cellNum">
                                     </div>
                                 </div>
                             </div>
@@ -137,23 +138,23 @@
                                         <div class="input-group-prepend">
                                             <div class="input-group-text" style="height: 38px; width:40px"><i class="fa fa-phone" style="font-size:1rem"></i></div>
                                         </div>
-                                        <input type="text" class="form-control edit" name="otherNum">
+                                        <input type="text" class="form-control " name="otherNum">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="m-10">
-                        <div class="modal-footer">
-                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                            <input type="submit" name="edit_learner" class="btn btn-info" value="Save">
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                <input type="submit" name="add_learner" class="btn btn-info" value="Save">
+                            </div>
                         </div>
-                    </div>
 
 
                     </div>
 
-                   
+
 
                 </div>
             </div>
