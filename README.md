@@ -12,3 +12,13 @@ To open in VSC:
 2. Right click then Serve Project
 3. Run in browser
 
+
+Structure:
+
+<html>
+  <index.php>
+    <header.php>
+    <table-$name.php>
+    
+
+
