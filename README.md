@@ -15,7 +15,7 @@ To open in VSC:
 
 Structure:
 
-<html>
+ html>
   <index.php>
     <header.php>
     <table-$name.php>
