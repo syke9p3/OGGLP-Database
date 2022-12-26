@@ -13,10 +13,12 @@ Database project of Information Management
 2. JQuery
 3. AJAX 
 
-#Requirements 
+## Requirements 
 1. VSC 
 2. Browser 
 3. PHP extension
+
+## Instruction
 
 To open in VSC:
 
@@ -25,7 +27,7 @@ To open in VSC:
 3. Run in browser
 
 
-Structure:
+## Instruction
 ```html
   <html>
    <index.php>
