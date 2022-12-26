@@ -1,10 +1,22 @@
 # OGGLP-Database
 Database project of Information Management
 
-Languages: PHP, CSS, MySQL 
-Libraries: Bootstrap, JQuery, AJAX 
+## Languages 
 
-Requirements: VSC, Browser, PHP extension
+1. PHP 
+2. CSS
+3. MySQL
+
+## Libraries 
+
+1. Bootstrap 
+2. JQuery
+3. AJAX 
+
+#Requirements 
+1. VSC 
+2. Browser 
+3. PHP extension
 
 To open in VSC:
 
@@ -14,11 +26,11 @@ To open in VSC:
 
 
 Structure:
-
- html>
-  <index.php>
-    <header.php>
-    <table-$name.php>
-    
+```html
+  <html>
+   <index.php>
+     <header.php>
+     <table-$name.php>
+```    
 
 
