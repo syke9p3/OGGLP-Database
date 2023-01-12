@@ -27,7 +27,7 @@ To open in VSC:
 3. Run in browser
 
 
-## Instruction
+## HTML Structure
 ```html
   <html>
    <index.php>
