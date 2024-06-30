@@ -17,8 +17,11 @@ Database project of Information Management
 1. VSC 
 2. Browser 
 3. PHP extension
+4. XAMPP
 
 ## Instruction
+
+Create Database, fill data using the sql files
 
 To open in VSC:
 
@@ -41,4 +44,8 @@ To open in VSC:
 - Professors
 - Courses
 
+## Todo
+Clone this project locally
+Run Project
+Screenshot modules
 
