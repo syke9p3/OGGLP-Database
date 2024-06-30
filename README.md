@@ -36,3 +36,9 @@ To open in VSC:
 ```    
 
 
+## Modules
+- Students
+- Professors
+- Courses
+
+
